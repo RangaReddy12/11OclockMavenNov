@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [mrng]">
+  <test thread-count="5" name="firefoxbrowser(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="dec5.Using_DataProvider">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="verifyLogin"/>
+        </methods>
+      </class> <!-- dec5.Using_DataProvider -->
+    </classes>
+  </test> <!-- firefoxbrowser(failed) -->
+  <test thread-count="5" name="chromebrowser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="dec5.Using_DataProvider">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="verifyLogin"/>
+        </methods>
+      </class> <!-- dec5.Using_DataProvider -->
+    </classes>
+  </test> <!-- chromebrowser(failed) -->
+  <test thread-count="5" name="iebrowser(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="dec5.Using_DataProvider">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="verifyLogin" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- dec5.Using_DataProvider -->
+    </classes>
+  </test> <!-- iebrowser(failed) -->
+</suite> <!-- Failed suite [mrng] -->

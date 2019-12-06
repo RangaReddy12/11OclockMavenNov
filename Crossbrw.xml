@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mrng">
+  <test name="firefoxbrowser">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="dec5.Using_DataProvider"/>
+    </classes>
+  </test> <!-- firefoxbrowser -->
+  <test name="chromebrowser">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="dec5.Using_DataProvider"/>
+    </classes>
+  </test> <!-- chromebrowser -->
+  <test name="iebrowser">
+  <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="dec5.Using_DataProvider"/>
+    </classes>
+  </test> <!-- iebrowser -->
+</suite> <!-- Suite -->
